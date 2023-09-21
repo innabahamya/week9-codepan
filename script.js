@@ -29,5 +29,6 @@ button.addEventListener('click', () => {
 });
 
 const newInterestRate = 7;
-let sumAfterYear = sum * newInterestRate / 100;
+let sumGrowth = sum * newInterestRate / 100;
+let sumAfterYear = sumGrowth + sum;
 console.log( 'Через год у вас будет ' + sumAfterYear + ' ' + currency + '.' + 'на счету' );
