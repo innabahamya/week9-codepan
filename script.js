@@ -27,3 +27,7 @@ button.addEventListener('click', () => {
   const sum = document.querySelector('.sum').value;
   total.textContent = (message); // Через год у вас будет XXX руб. на счету", где вместо ХХХ выведите сколько получится на счету с учетом процентной ставки 7% годовых
 });
+
+const newInterestRate = 7;
+let sumAfterYear = sum * newInterestRate / 100;
+console.log( 'Через год у вас будет ' + sumAfterYear + ' ' + currency + '.' + 'на счету' );
